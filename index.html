@@ -1,0 +1,68 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/main.css">
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <div class="scoreboard-all">
+        <div class="winning-score">
+            <p>Jogadora 1 ganhou!</p>
+        </div>
+        <div class="scoreboard">
+            <span class="player" id="scoreboard-player1">Jogador 1</span>
+            <span class="score" id="point-player1">03</span>
+            <span class="divisor-class" id="divisor">VS</span>
+            <span class="score" id="point-player2">02</span>
+            <span class="player" id="scoreboard-player2">Jogador 2</span>
+        </div>
+    </div>
+    <div class="battlefild">
+        <div class="player1">
+            <button class="button-move" id="stone-player1">
+                Pedra
+            </button>
+            <button class="button-move" id="paper-player1">
+                Papel
+            </button>
+            <button class="button-move" id="scissors-player1">
+                Tesoura
+            </button>
+        </div>
+        <div class="battlefild-camp">
+            <div class="battlefild-player1"></div>
+            <span class="divisor">vs</span>
+            <div class="battlefild-player2"></div>
+        </div>
+
+        <div class="player2">
+
+            <button class="button-move" id="stone-player2">
+            Pedra
+            </button>
+            <button class="button-move" id="paper-player2">
+            Papel
+            </button>
+            <button class="button-move" id="scissors-player2">
+            Tesoura
+            </button>
+        </div>
+    </div>
+    <div class="start-and-reset">
+        <button class="start">Começar</button>
+        <button class="reset"> Resetar</button>
+
+    </div>
+
+
+</body>
+<script src="/index.js"></script>
+
+</html>
