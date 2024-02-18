@@ -182,3 +182,59 @@ body {
     font-weight: 600;
     font-size: 33px;
 }
+
+@media screen and (max-width: 992px) {
+    .scoreboard-all {
+        margin-top: 30px;
+    }
+    .winning-score {
+        width: 90%;
+        max-width: 379px;
+    }
+    .scoreboard {
+        width: 100%;
+        max-width: 379px;
+    }
+    .score {
+        font-size: 70px;
+    }
+    .divisor-class {
+        font-size: 40px;
+    }
+    .player {
+        display: none;
+    }
+    .battlefild {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .battlefild button {
+        font-size: 28px;
+    }
+    .battlefild-player1,
+    .battlefild-player2 {
+        max-width: 1400px;
+        height: 100px;
+        margin: 10px;
+    }
+    .divisor {
+        font-size: 50px;
+    }
+    .player1,
+    .player2 {
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px 10px 15px 10px;
+    }
+    .start-and-reset {
+        flex-direction: column;
+    }
+    .start,
+    .reset {
+        width: 158px;
+        font-size: 28px;
+        height: 48px;
+        margin: 5px;
+    }
+    @media screen {}
+}
