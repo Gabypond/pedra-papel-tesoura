@@ -5,7 +5,7 @@ body {
 }
 
 .scoreboard-all {
-    margin-top: 139px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,10 +21,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.winning-score p {
     font-size: 33px;
+    font-weight: 500;
 }
 
 .scoreboard {
@@ -103,11 +101,16 @@ body {
 
 .battlefild-player1 {
     background-color: #DBF1FF;
+    display: flex;
     margin: 35px;
     border-radius: 8px;
     max-width: 464px;
     width: 100%;
     height: 345px;
+}
+
+.battlefild-player1 img {
+    width: 85%;
 }
 
 .button-move {
@@ -123,11 +126,17 @@ body {
 
 .battlefild-player2 {
     background-color: #DBF1FF;
+    display: flex;
     border-radius: 8px;
     margin: 35px;
     max-width: 464px;
     width: 100%;
     height: 345px;
+}
+
+.battlefild-player2 img {
+    width: 85%;
+    transform: rotateY(180deg);
 }
 
 .player2 {
@@ -236,5 +245,4 @@ body {
         height: 48px;
         margin: 5px;
     }
-    @media screen {}
 }
