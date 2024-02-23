@@ -13,8 +13,7 @@ let $pointingPlayer2 = document.querySelector('#point-player2')
 const $moveBoxPlayer1 = document.querySelector('.battlefild-player1')
 const $moveBoxPlayer2 = document.querySelector('.battlefild-player2')
 
-const resetMoveBoxPlayer1 = $moveBoxPlayer1
-const resetMoveBoxPlayer2 = $moveBoxPlayer2
+
 let movingPlayer1 = ''
 let movingPlayer2 = ''
 let winner = 0
@@ -66,9 +65,8 @@ function winnerPrint() {
 }
 
 function resetScorePlayer() {
-    winner = ''
-
-
+    $moveBoxPlayer1.innerHTML = ''
+    $moveBoxPlayer2.innerHTML = ''
 }
 
 function resetBattlefild() {
@@ -80,6 +78,8 @@ function resetBattlefild() {
 function resetPrintWinnerPlayer() {
     playerScore1 = ''
     playerScore2 = ''
+    $winnerGamePrint.innerHTML = 'Deu certo'
+
 }
 
 function resetAll() {
@@ -103,7 +103,6 @@ function handleStoneMovePlayer1() {
     winnerPrint()
     if (winner != 0) {
         setTimeout(resetBattlefild, 1000)
-        resetScorePlayer()
         resetPrintWinnerPlayer()
         winner = 0
         console.log(resetBattlefild, resetScorePlayer)
@@ -118,8 +117,7 @@ function handlePaperMovePlayer1() {
     printWinnerPlayer()
     winnerPrint()
     if (winner != 0) {
-        setTimeout(resetBattlefild, 1000)
-        resetScorePlayer()
+        setTimeout(resetScorePlayer, 1000)
         resetPrintWinnerPlayer()
         winner = 0
     }
@@ -133,8 +131,7 @@ function handleScissorsMovePlayer1() {
     printWinnerPlayer()
     winnerPrint()
     if (winner != 0) {
-        setTimeout(resetBattlefild, 1000)
-        resetScorePlayer()
+        setTimeout(resetScorePlayer, 1000)
         resetPrintWinnerPlayer()
         winner = 0
         console.log(resetBattlefild, resetScorePlayer)
@@ -149,8 +146,7 @@ function handleStoneMovePlayer2() {
     printWinnerPlayer()
     winnerPrint()
     if (winner != 0) {
-        setTimeout(resetBattlefild, 1000)
-        resetScorePlayer()
+        setTimeout(resetScorePlayer, 1000)
         resetPrintWinnerPlayer()
         winner = 0
         console.log(resetBattlefild, resetScorePlayer)
@@ -165,8 +161,7 @@ function handlePaperMovePlayer2() {
     printWinnerPlayer()
     winnerPrint()
     if (winner != 0) {
-        setTimeout(resetBattlefild, 1000)
-        resetScorePlayer()
+        setTimeout(resetScorePlayer, 1000)
         resetPrintWinnerPlayer()
 
         winner = 0
@@ -183,8 +178,8 @@ function handleScissorsMovePlayer2() {
     winnerPrint()
     resetPrintWinnerPlayer()
     if (winner != 0) {
-        setTimeout(resetBattlefild, 1000)
-        resetScorePlayer()
+        setTimeout(resetScorePlayer, 1000)
+        resetPrintWinnerPlayer()
         winner = 0
         console.log(resetBattlefild, resetScorePlayer)
     }
